@@ -1,18 +1,14 @@
 {
-    "manifest_version":2,
+    "manifest_version":3,
     "version":"1.0",
-    "name": "Awesome Test Extension",
+    "name": "Not Ransomware",
     
 
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
+
 
     "content_scripts": [
         {
-          "matches": ["https://*.github.com/*"],
-          "css": ["newStyle.css"],
+          "matches": ["<all_urls>"],
           "js": ["content.js"]
         }
       ],
@@ -20,7 +16,9 @@
     "permissions": [
         "storage",
         "activeTab",
-        "webNavigation"
+        "webNavigation",
+        "tabs"
+
     ]
 
   }
