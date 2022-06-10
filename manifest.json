@@ -9,6 +9,14 @@
       "persistent": false
     },
 
+    "content_scripts": [
+        {
+          "matches": ["https://*.github.com/*"],
+          "css": ["newStyle.css"],
+          "js": ["content.js"]
+        }
+      ],
+
     "permissions": [
         "storage",
         "activeTab",
