@@ -1,0 +1,18 @@
+{
+    "manifest_version":2,
+    "version":"1.0",
+    "name": "Awesome Test Extension",
+    
+
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+
+    "permissions": [
+        "storage",
+        "activeTab",
+        "webNavigation"
+    ]
+
+  }
